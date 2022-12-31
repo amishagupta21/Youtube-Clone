@@ -27,7 +27,7 @@ function Video() {
           <div className={styles.mainSection}>
             <div className={styles.subscribe}>
               <div className={styles.logo}>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVTICfQstCkxucg8OKWNshAULiTkcoSYPiWg&usqp=CAU" width={36} height={36} />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVTICfQstCkxucg8OKWNshAULiTkcoSYPiWg&usqp=CAU" width={36} height={36} alt="logo"/>
               </div>
               <div>
                 <h3>{state.video.snippet.channelTitle}</h3>
@@ -40,27 +40,27 @@ function Video() {
             <div className={styles.cta}>
               <div className={styles.likebtn}>
                 <div className={styles.likeIcon}>
-                  <img src={like} width={28} height={22} />
+                  <img src={like} width={28} height={22} alt="like"/>
                   <span>217K</span>
                 </div>
                 <div className={styles.dislikeIcon}>
-                  <img src={dislike} width={28} height={22} />
+                  <img src={dislike} width={28} height={22} alt="dislike"/>
                 </div>
               </div>
 
               <div className={styles.btn}>
-                <img src={share} width={28} height={22} />
+                <img src={share} width={28} height={22} alt="share"/>
                 <span>share</span>
               </div>
 
               <div className={styles.btn}>
-                <img src={share} width={28} height={22} />
+                <img src={share} width={28} height={22} alt="download"/>
                 <span>Download</span>
               </div>
 
 
               <div className={styles.options}>
-                <img src={options} width={30} height={12} />
+                <img src={options} width={30} height={12} alt="options"/>
               </div>
             </div>
           </div>

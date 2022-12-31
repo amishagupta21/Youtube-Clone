@@ -31,11 +31,11 @@ function Main() {
                     return (
                         <div className={styles.video}>
                             <Link to={`/watch/${video.id}`} state={{ type: "video", video }}>
-                                <img className={styles.channelCoverImg} src={video.snippet.thumbnails.high.url} />
+                                <img className={styles.channelCoverImg} src={video.snippet.thumbnails.high.url} alt="YoutubeLogo"/>
                             </Link>
                             <div className={styles.video_info}>
                                 <div>
-                                    <img className={styles.channelLogo} src={video.snippet.thumbnails.high.url} width={60} height={60} />
+                                    <img className={styles.channelLogo} src={video.snippet.thumbnails.high.url} width={60} height={60} alt="channelLogo"/>
                                 </div>
                                 <div>
                                     <Link to={`/watch/${video.id}`} state={{ type: "video", video }}>

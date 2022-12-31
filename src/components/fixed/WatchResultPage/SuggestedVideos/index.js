@@ -14,26 +14,27 @@ function SuggestedVideos() {
     const {id} = useParams();
     const {state} = useLocation();
 
-     const fetchSuggestedVideos = ()=>{
-        axios({
-            method:"GET",
-            url: `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&videoCategoryId=${state.video.snippet.categoryId || 24}&key=${API_KEY}&maxResults=40`
-        }).then((res) => {
-            setsuggestedVideos(res.data.items)
-        }).catch((err) => {
-            console.log("ERROR: ", err);
-        })
-    }
+    
     useEffect(() => {
+        const fetchSuggestedVideos = ()=>{
+            axios({
+                method:"GET",
+                url: `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&videoCategoryId=${state.video.snippet.categoryId || 24}&key=${API_KEY}&maxResults=40`
+            }).then((res) => {
+                setsuggestedVideos(res.data.items)
+            }).catch((err) => {
+                console.log("ERROR: ", err);
+            })
+        }
         fetchSuggestedVideos();
-    }, [id])
+    }, [state.video.snippet.categoryId,id])
     return (
         <>
             {suggestedVideos.map((video, index) => {
                 return (
                     <div key={index} className={styles.suggested}>
                         <Link to={`/watch/${video.id}`} state={{ type: "video", video }} className={styles.suggestedVideoThumnail}>
-                            <img width="100%" height="100%" src={video.snippet.thumbnails.high.url}/>
+                            <img width="100%" height="100%" src={video.snippet.thumbnails.high.url} alt="suggestedvideo"/>
                         </Link>
                         <div className={styles.suggestedContent}>
                             <h1>{video.snippet.title}</h1>

@@ -53,10 +53,10 @@ const Header = () => {
                         type="search"
                         placeholder="enter your search here..." />
                     <div onClick={searchVideo} className={styles.search_icon}>
-                        <img src={searchicon} width={26} height={22} />
+                        <img src={searchicon} width={26} height={22} alt="search"/>
                     </div>
                 </div>
-                <img src={mic} width={22} height={26} />
+                <img src={mic} width={22} height={26} alt="mic"/>
             </div>
 
             <div className={styles.options}>
