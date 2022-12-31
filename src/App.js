@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import HomePage from './pages/HomePage';
+import VideoResultsPage from './pages/VideoResultsPage';
+import WatchResultsPage from './pages/WatchResultsPage';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import YoutubeChannel from './pages/YoutubeChannel';
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "/results",
+    element: <VideoResultsPage />,
+  },
+  {
+    path: "/watch/:id", 
+    element: <WatchResultsPage />,
+  },
+  {
+    path: "/:channelId", 
+    element: <YoutubeChannel />,
+  }
+]);
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <RouterProvider router={router} />
 }
 
 export default App;

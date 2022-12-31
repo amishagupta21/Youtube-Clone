@@ -1,0 +1,98 @@
+.container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.sidebar {
+    width: 18%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    
+}
+.icon h3{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.icon:hover{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sidebar hr{
+ border: 1px solid grey;
+  margin-top: 10px;
+}
+
+.videos {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.video {
+    flex: 1;
+    flex-basis: 250px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.channelCoverImg {
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.channelLogo {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.views {
+    display: flex;
+    /* padding-left: 20px; */
+    gap: 30px;
+}
+
+.video_info {
+    display: flex;
+    gap:10px;
+    margin-top: 10px;
+}
+.video_info h3{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+
+}
+.video_info span{
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 400;
+}
+.views h3{
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 400;
+}
+.explore{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 400;
+}

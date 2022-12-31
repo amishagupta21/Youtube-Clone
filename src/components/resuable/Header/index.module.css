@@ -1,0 +1,90 @@
+.container {
+    display: flex;
+    height: 10vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.searchBar {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:12px
+}
+.searchField{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.searchField input {
+    width: 100%;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    margin-left: 10px;
+    border-right: 10px;
+}
+
+.search_icon {
+    border: 1px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 40px;
+    width: 50px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_icon:hover {
+    opacity: 0.7;
+}
+
+
+.mic:hover {
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 100%;
+ 
+}
+
+.options {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    justify-content: flex-end; 
+    padding-right:20px ;
+
+}
+.box{
+    
+    border-radius: 100%;
+    padding: 4px;
+}
+.box:hover{
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 100%;
+}
+

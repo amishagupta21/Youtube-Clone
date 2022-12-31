@@ -1,0 +1,36 @@
+
+.suggested {
+    display: flex;
+    height: 94px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.suggestedVideoThumnail {
+    height: 100%;
+    width: 45%;
+}
+
+.suggested img {
+    border-radius: 10px;
+}
+
+.suggestedContent {
+    height: 100%;
+    width: 55%;
+    padding-left: 10px;
+}
+
+.suggestedContent h1 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #0f0f0f;
+}
+
+.suggestedContent span {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #606060;
+}

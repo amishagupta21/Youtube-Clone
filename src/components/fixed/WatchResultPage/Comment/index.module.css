@@ -1,0 +1,295 @@
+.container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    overflow-y: scroll;
+    padding-top: 10px;
+}
+
+.videoPage {
+    width: 70%;
+    height: 100%;
+    padding-left: 40px;
+}
+
+
+.videos {
+    width: 100%;
+    height: 470px;
+}
+
+.mainSection {
+    display: flex;
+
+}
+
+.subscribe {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.cta {
+    height: 60px;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px;
+}
+
+
+.like {
+    display: flex;
+}
+
+
+.logo img {
+    border-radius: 100%;
+}
+
+.follow span {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
+
+.follow span:hover {
+    opacity: 0.7;
+}
+
+.likebtn {
+    background-color: #f2f2f2;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.likeIcon {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-right: 1px solid #d9d9d9;
+    padding-right: 10px;
+}
+
+.dislikeIcon {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.options {
+    width: 40px;
+    height: 40px;
+    background-color: #f2f2f2;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.options:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.videoBox h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.suggestionPage {
+    width: 30%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.suggested {
+    display: flex;
+    height: 94px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.suggestedVideoThumnail {
+    height: 100%;
+    width: 45%;
+}
+
+.suggested img {
+    border-radius: 10px;
+}
+
+.suggestedContent {
+    height: 100%;
+    width: 55%;
+    padding-left: 10px;
+}
+
+.suggestedContent h1 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #0f0f0f;
+}
+
+.suggestedContent span {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #606060;
+}
+
+.view h3 {
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #0f0f0f;
+}
+.description{
+    height: 20%;
+    width: 100%;
+    background-color:   #f2f2f2;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.views{
+    display: flex;
+    gap:10px;
+}
+.views h2{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.description p{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    padding-bottom: 5px;
+
+}
+.description span{
+    cursor: pointer;
+}
+.comments{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+.comments h2{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.sortBy{
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.sortBy h2{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+.addComments{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    gap: 10px;
+}
+.addComments img{
+    border-radius: 100px;
+}
+.addComments input{
+    height: 30px;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+.CommentsInfo{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+
+}
+.CommentsLogo{
+    width: 50px;
+    
+
+}
+.CommentsLogo img{
+    border-radius: 100px;
+}
+.CommentsAccountInfo{   
+    width:80%;
+}
+.CommentsAccountInfo p{
+    padding: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+.AccountInfo{
+    display: flex;
+    gap: 12px;
+    padding: 5px;
+
+}
+.AccountInfo h2{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+.review{
+    width: 80%;
+    height: 50px;
+   display: flex;
+   gap: 10px;
+   padding: 5px;
+
+}
+.review h1{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
