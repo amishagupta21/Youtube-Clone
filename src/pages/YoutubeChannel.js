@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect } from 'react'
+import Base from '../components/fixed/Base';
 
 const API_KEY = "AIzaSyAceKCVYFltcS7Ci2B4Tp7KYT2A0_EvGgA";
 
@@ -18,9 +19,9 @@ function YoutubeChannel() {
         fetchYoutubeChannelData()
     }, [])
     return (
-        <div>
+        <Base>
             <h1>Youtube Channel</h1>
-        </div>
+        </Base>
     )
 }
 

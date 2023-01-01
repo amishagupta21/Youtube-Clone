@@ -1,13 +1,12 @@
 import React from 'react'
+import Base from '../components/fixed/Base'
 import Main from '../components/fixed/HomePage/Main'
-import Header from '../components/resuable/Header'
 
 const HomePage = () => {
   return (
-    <>
-      <Header />
+    <Base>
       <Main />
-    </>
+    </Base>
   )
 }
 

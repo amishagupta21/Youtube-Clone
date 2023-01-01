@@ -1,13 +1,12 @@
 import React from 'react'
+import Base from '../components/fixed/Base'
 import WatchResults from '../components/fixed/WatchResultPage/WatchMain'
-import Header from '../components/resuable/Header'
 
 const WatchResultsPage = () => {
   return (
-    <div>
-        <Header/>
+    <Base hideSideBar={true}>
         <WatchResults/>
-    </div>
+    </Base>
   )
 }
 

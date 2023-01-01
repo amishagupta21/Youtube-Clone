@@ -1,14 +1,12 @@
 import React from 'react'
+import Base from '../components/fixed/Base'
 import VideoResultsPage from '../components/fixed/VideoResultsPage/VideoMain'
-import Header from '../components/resuable/Header'
 
 const VideoPage = () => {
-
   return (
-    <div>
-      <Header />
+    <Base>
       <VideoResultsPage />
-    </div>
+    </Base>
   )
 }
 

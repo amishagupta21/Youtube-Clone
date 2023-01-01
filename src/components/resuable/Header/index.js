@@ -12,7 +12,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 const API_KEY = "AIzaSyAceKCVYFltcS7Ci2B4Tp7KYT2A0_EvGgA";
 
-const Header = () => {
+const Header = ({toggleSideBar}) => {
     const [search, setSearch] = useState("");
 
     const searchHandler = e => setSearch(e.target.value);
@@ -34,11 +34,12 @@ const Header = () => {
         })
     }
 
+
     return (
         <header className={styles.container}>
 
             <div className={styles.logo}>
-                <img src={hamburger} width={22} height={22} alt="hamburger icon" />
+                <img onClick={toggleSideBar}  src={hamburger} width={22} height={22} alt="hamburger icon" />
                 <Link to="/">
                     <img src={logo} width={120} height={22} alt="youtube icon" />
                 </Link>
