@@ -52,8 +52,6 @@ const VideoResultsPage = () => {
                                 <img src={video.snippet.thumbnails.high.url} alt="videoplaylist" />
                             </Link>
                         )}
-
-
                         <div className={styles.videoContent}>
                             <h3>{video.snippet.title}</h3>
                             <div className={styles.views}>

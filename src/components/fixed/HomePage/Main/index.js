@@ -42,7 +42,7 @@ function Main() {
 
                                     <div className={styles.views}>
                                         <h3>{views} k</h3>
-                                        <h3>. {moment(video.snippet.publishTime, "YYYYMMDD").fromNow()}</h3>
+                                        <h3>.{moment(video.snippet.publishTime, "YYYYMMDD").fromNow()}</h3>
                                     </div>
                                 </div>
 
